@@ -1,7 +1,9 @@
+import sys
 from menu import *
 
-userChoice = 0
+userChoice = 99
 
-while Chosen(userChoice) == False:
+while True:
  userChoice = PrintMenu()
+ HandleChoice(userChoice)
  print('\n')
