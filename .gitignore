@@ -7,3 +7,4 @@
 # General #
 ###########
 *.DS_Store
+ProjectFiles\*.api
