@@ -1,3 +1,6 @@
 from menu import *
 
-PrintMenu()
+userChoice = 0
+
+while Chosen(userChoice) == False:
+ userChoice = PrintMenu()
