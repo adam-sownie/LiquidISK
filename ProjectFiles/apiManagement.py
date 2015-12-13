@@ -14,6 +14,16 @@ def ListKeys():
   return True
 
 def RemoveKey():
+  keyToRemove = input('enter key number: ')
+  with open(apiFile) as apiKeys:
+    keys = apiKeys.readlines()
+
+  keys.remove(keys[keyToRemove - 1])
+
+  with open(apiFile, 'w') as apiKeys:
+    for key in keys:
+      apiKeys.write(key)
+
   return True
 
 def AddKey():
