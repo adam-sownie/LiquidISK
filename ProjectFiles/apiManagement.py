@@ -5,7 +5,6 @@ def RemoveKey():
   return True
 
 def AddKey():
-  return True
   keyID=input('  KeyID: ')
   verificationCode=input('  verificationCode: ')
 
