@@ -29,7 +29,7 @@ def PrintMenu():
 
 def HandleChoiceAPI(choice):
   if choice == 0:
-    print('returning to main menu\n')
+    print('returning to main menu')
     return False
 
   if choice == 1:
