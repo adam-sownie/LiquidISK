@@ -7,7 +7,7 @@ def RemoveKey():
   return True
 
 def AddKey():
-  keyID = raw_input('Key ID: ')
+  keyID = raw_input('\nKey ID: ')
   verificationCode = raw_input('Verification Code: ')
 
   apiKeys = open('keys.api', 'a')

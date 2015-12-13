@@ -19,9 +19,9 @@ def HandleChoiceMain(choice):
   return False
 
 def PrintMenu():
-  print('0) exit')
+  print('\n0) exit')
   print('1) manage API keys')
-  print('2) refresh wallets')
+  print('2) refresh wallets\n')
 
   choice=input(': ')
 
@@ -45,10 +45,10 @@ def HandleChoiceAPI(choice):
   return False
 
 def APIMenu():
-  print('0) exit API magement')
+  print('\n0) exit API magement')
   print('1) list keys')
   print('2) add key')
-  print('3) remove key')
+  print('3) remove key\n')
 
   choice=input(': ')
 
