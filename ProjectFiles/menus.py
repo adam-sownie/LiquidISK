@@ -7,11 +7,15 @@ def HandleChoiceMain(choice):
     sys.exit(0)
 
   if choice == 1:
-    APIMenu()
+    doAPIWork = True
+    while doAPIWork:
+      doAPIWork = HandleChoiceAPI(APIMenu())
+    return False
 
   if choice == 2:
     return True
 
+  print('Please choose an option from the list\n')
   return False
 
 def PrintMenu():
@@ -24,32 +28,28 @@ def PrintMenu():
   return choice
 
 def HandleChoiceAPI(choice):
-  if(choice == 0):
+  if choice == 0:
     print('returning to main menu\n')
     return False
 
-  if(choice == 1):
-    return False
+  if choice == 1:
+    return ListKeys()
 
-  if(choice == 2):
-    return False
+  if choice == 2:
+    return AddKey()
 
-  if(choice == 3):
-    return False
+  if choice == 3:
+    return RemoveKey()
+
+  print('Please choose an option from the list\n')
+  return False
 
 def APIMenu():
   print('0) exit API magement')
   print('1) list keys')
-  print('2) remove key')
-  print('3) add key\n')
+  print('2) add key')
+  print('3) remove key\n')
 
   choice=input(': ')
 
   return choice
-
-def Chosen(choice):
-  if choice in [0, 1, 2]:
-    return True
-
-  print('please choose an option')
-  return False

@@ -2,6 +2,5 @@ import sys
 from menus import *
 
 while True:
- userChoice = PrintMenu()
- HandleChoiceMain(userChoice)
+ HandleChoiceMain(PrintMenu())
  print('\n')

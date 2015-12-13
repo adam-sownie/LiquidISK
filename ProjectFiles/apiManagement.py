@@ -1,10 +1,11 @@
 def ListKeys():
-  return False
+  return True
 
 def RemoveKey():
-  return False
+  return True
 
 def AddKey():
+  return True
   keyID=input('  KeyID: ')
   verificationCode=input('  verificationCode: ')
 
@@ -14,3 +15,5 @@ def AddKey():
   apiKeys.write(verificationCode)
 
   apiKeys.close()
+
+  return True
