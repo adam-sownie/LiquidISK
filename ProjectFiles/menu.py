@@ -1,14 +1,17 @@
+from apiManagement import *
+
 def PrintMenu():
-  print('1) add API')
-  print('2) refresh wallets')
+  print('1) exit')
+  print('2) manage API keys')
+  print('3) refresh wallets')
   choice=input(': ')
   return choice
 
-def Chosen(choice):
-  if choice == 1:
-    return True
+def APIMenu():
+  return False
 
-  elif choice == 2:
+def Chosen(choice):
+  if choice in [1, 2, 3]:
     return True
 
   print('please choose an option')
