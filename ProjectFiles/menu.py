@@ -1,7 +1,7 @@
 import sys
 from apiManagement import *
 
-def HandleChoice(choice):
+def HandleChoiceMain(choice):
   if choice == 0:
     print('goodbye')
     sys.exit(0)
@@ -23,7 +23,22 @@ def PrintMenu():
 
   return choice
 
+def HandleChoiceAPI(choice):
+  if(choice == 0):
+    print('returning to main menu\n')
+    return False
+
+  if(choice == 1)
+    return False
+
+  if(choice == 2)
+    return False
+
+  if(choice == 3)
+    return False
+
 def APIMenu():
+  print('0) exit API magement')
   print('1) list keys')
   print('2) remove key')
   print('3) add key\n')
