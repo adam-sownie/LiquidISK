@@ -23,7 +23,7 @@ def PrintMenu():
   print('1) manage API keys')
   print('2) refresh wallets\n')
 
-  choice=input(': ')
+  choice = input(': ')
 
   return choice
 
@@ -50,6 +50,6 @@ def APIMenu():
   print('2) add key')
   print('3) remove key\n')
 
-  choice=input(': ')
+  choice = input(': ')
 
   return choice
