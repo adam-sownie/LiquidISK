@@ -1,5 +1,5 @@
 import sys
-from menu import *
+from menus import *
 
 userChoice = 99
 
