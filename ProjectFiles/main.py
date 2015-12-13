@@ -3,5 +3,5 @@ from menus import *
 
 while True:
  userChoice = PrintMenu()
- HandleChoice(userChoice)
+ HandleChoiceMain(userChoice)
  print('\n')

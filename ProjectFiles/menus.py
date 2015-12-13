@@ -28,13 +28,13 @@ def HandleChoiceAPI(choice):
     print('returning to main menu\n')
     return False
 
-  if(choice == 1)
+  if(choice == 1):
     return False
 
-  if(choice == 2)
+  if(choice == 2):
     return False
 
-  if(choice == 3)
+  if(choice == 3):
     return False
 
 def APIMenu():
