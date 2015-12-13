@@ -7,3 +7,10 @@ def RemoveKey():
 def AddKey():
   keyID=input('  KeyID: ')
   verificationCode=input('  verificationCode: ')
+
+  apiKeys = open('\\APIKeys\\keys.api', 'a')
+
+  apiKeys.write(keyID)
+  apiKeys.write(verificationCode)
+
+  apiKeys.close()
