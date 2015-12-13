@@ -3,4 +3,3 @@ from menus import *
 
 while True:
  HandleChoiceMain(PrintMenu())
- print('\n')

@@ -15,13 +15,13 @@ def HandleChoiceMain(choice):
   if choice == 2:
     return True
 
-  print('Please choose an option from the list\n')
+  print('Please choose an option from the list')
   return False
 
 def PrintMenu():
   print('0) exit')
   print('1) manage API keys')
-  print('2) refresh wallets\n')
+  print('2) refresh wallets')
 
   choice=input(': ')
 
@@ -41,14 +41,14 @@ def HandleChoiceAPI(choice):
   if choice == 3:
     return RemoveKey()
 
-  print('Please choose an option from the list\n')
+  print('Please choose an option from the list')
   return False
 
 def APIMenu():
   print('0) exit API magement')
   print('1) list keys')
   print('2) add key')
-  print('3) remove key\n')
+  print('3) remove key')
 
   choice=input(': ')
 
