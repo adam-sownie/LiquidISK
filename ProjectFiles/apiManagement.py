@@ -24,6 +24,19 @@ def ImportISK():
 
   print('\ntotal isk amount')
 
+def ImportLiquidISK():
+  i = 0
+  with open(apiFile) as apiKeys:
+    for key in apiKeys:
+      i += 1
+      print('\ncharacterName')
+      print('assets with isk amount')
+      print('wallet amount')
+      print('total isk')
+
+  print('\ntotal wallet isk amount')
+  print('total isk ammount')
+
 def RemoveKey():
   keyToRemove = input('enter key number: ')
   with open(apiFile) as apiKeys:
