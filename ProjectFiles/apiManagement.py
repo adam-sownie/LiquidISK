@@ -13,6 +13,17 @@ def ListKeys():
 
   return True
 
+def ImportISK():
+  i = 0
+
+  with open(apiFile) as apiKeys:
+    for key in apiKeys:
+      i += 1
+      print('\ncharacterName')
+      print('isk amount')
+
+  print('\ntotal isk amount')
+
 def RemoveKey():
   keyToRemove = input('enter key number: ')
   with open(apiFile) as apiKeys:
