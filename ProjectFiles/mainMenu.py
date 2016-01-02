@@ -12,7 +12,7 @@ def HandleChoiceMain(choice):
     while doAPIWork:
       doAPIWork = apiMenu.HandleChoiceAPI(
                     apiMenu.PrintAPIMenu())
-    return False
+    return doAPIWork
 
   if choice == 2:
     return walletHandler.ShowISK()
