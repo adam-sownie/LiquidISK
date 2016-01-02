@@ -1,5 +1,6 @@
 import sys
 import apiMenu
+import walletHandler
 
 def HandleChoiceMain(choice):
   if choice == 0:
@@ -14,7 +15,7 @@ def HandleChoiceMain(choice):
     return False
 
   if choice == 2:
-    return True
+    return walletHandler.ShowISK()
 
   print('Please choose an option from the list')
   return False
