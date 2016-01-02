@@ -1,6 +1,5 @@
 import sys
 import apiMenu
-import apiManagement
 
 def HandleChoiceMain(choice):
   if choice == 0:

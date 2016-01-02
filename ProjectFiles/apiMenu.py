@@ -1,4 +1,4 @@
-from apiManagement import *
+import apiManagement
 
 def HandleChoiceAPI(choice):
   if choice == 0:
@@ -6,13 +6,13 @@ def HandleChoiceAPI(choice):
     return False
 
   if choice == 1:
-    return ListKeys()
+    return apiManagement.ListKeys()
 
   if choice == 2:
-    return AddKey()
+    return apiManagement.AddKey()
 
   if choice == 3:
-    return RemoveKey()
+    return apiManagement.RemoveKey()
 
   print('Please choose an option from the list')
   return False
