@@ -1,5 +1,5 @@
 import sys
-import menus
+import mainMenu
 
 while True:
- menus.HandleChoiceMain(menus.PrintMenu())
+ mainMenu.HandleChoiceMain(mainMenu.PrintMenu())
