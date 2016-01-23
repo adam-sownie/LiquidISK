@@ -25,7 +25,6 @@ def ImportISK():
     for key in apiKeys:
       i += 1
       apiKey = FormatKey(key)
-      print(apiKey)
       print('\ncharacterName')
       print('isk amount')
 
