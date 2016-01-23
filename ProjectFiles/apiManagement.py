@@ -13,12 +13,19 @@ def ListKeys():
 
   return True
 
+def FormatKey(key):
+  key = key.strip('\n')
+  apiKey = key.split(",")
+  return apiKey
+
 def ImportISK():
   i = 0
 
   with open(apiFile) as apiKeys:
     for key in apiKeys:
       i += 1
+      apiKey = FormatKey(key)
+      print(apiKey)
       print('\ncharacterName')
       print('isk amount')
 
